@@ -76,7 +76,6 @@ CSVExcelViewer/
 └─ README.md
 ```
 
-> `CSVExcelViewer.exe` は **Git の管理対象にせず**、GitHub の **Releases** にアップロードしてください（バイナリで履歴が肥大化するのを防ぐため）。
 
 ---
 

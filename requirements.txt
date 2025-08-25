@@ -1,0 +1,3 @@
+TkEasyGUI
+PySimpleGUI
+openpyxl

@@ -127,6 +127,5 @@ pyinstaller --noconsole --onedir csv_excel_viewer.py
 
 ## Author
 
-- Your Name (replace me)
-- X (Twitter): https://x.com/your_handle (任意)
+- name:小熊優介(oguma yuusuke)
 - お仕事のご相談は Issues またはプロフィールの連絡先へ

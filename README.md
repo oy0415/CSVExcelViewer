@@ -95,7 +95,6 @@ pyinstaller --noconsole --onedir csv_excel_viewer.py
 ```
 
 - 生成物は `dist/` に出力されます。
-- `--onefile` 版を **Releases** にアップロードし、`CSVExcelViewer.exe` として配布するのがおすすめです。
 - 相対パスで動く実装のため、**任意フォルダへ移動しても動作**します。
 
 ---

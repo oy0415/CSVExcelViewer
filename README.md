@@ -76,24 +76,62 @@ CSVExcelViewer/
 
 ---
 
-## EXE の作り方（PyInstaller）
 
-PyInstaller を使えば、Python 未導入の PC でも配布できます。
+## EXE の作り方（Windows / PowerShell）
 
-```bash
-pip install pyinstaller
+> 前提：リポジトリ直下に `src/csv_excel_viewer.py` がある構成。
+
+```powershell
+# 0) ルートへ
+cd <あなたのパス>\CSVExcelViewer
+
+# 1) 仮想環境
+py -3 -m venv .venv
+
+# 2) PowerShellだけ：このセッションで実行許可
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+
+# 3) 有効化
+.\.venv\Scripts\Activate.ps1
+
+# 4) 依存インストール
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+# 無ければ:
+# .\.venv\Scripts\python.exe -m pip install TkEasyGUI openpyxl
+
+# 5) PyInstaller → ビルド
+.\.venv\Scripts\python.exe -m pip install pyinstaller
 cd src
-
-# 1ファイル（持ち運び最小）
 pyinstaller --noconsole --onefile csv_excel_viewer.py
-
-# フォルダ配布（起動が速い）
-pyinstaller --noconsole --onedir csv_excel_viewer.py
 ```
-
-- 生成物は `dist/` に出力されます。
+>出力物
+- onefile：src\dist\csv_excel_viewer.exe
+- onedir：src\dist\csv_excel_viewer\csv_excel_viewer.exe
 - 相対パスで動く実装のため、**任意フォルダへ移動しても動作**します。
+>よくあるエラー
+- activate が見つからない → Activate.ps1 を使う
+- 実行ポリシー → 上記の Set-ExecutionPolicy を先に実行
+- pyinstaller が見つからない → 仮想環境の Python で ... -m pip install pyinstaller
 
+### Releases からダウンロード（推奨）
+
+ビルドせずに使いたい方は、こちらから最新版の実行ファイルを取得できます：
+
+- 👉 **[Releases からダウンロード](https://github.com/<yourname>/CSVExcelViewer/releases/latest)**  
+  （Assets 内の `csv_excel_viewer.exe` または ZIP を保存してください）
+
+**使い方（Windows 10/11）**
+1. ダウンロードした `csv_excel_viewer.exe` を任意のフォルダに置く  
+2. ダブルクリックで起動（ポータブル／インストール不要）
+
+> ⚠️ SmartScreen が表示された場合  
+> 「詳細情報」→「実行」を選択してください（自作アプリの初回実行時に出ることがあります）。
+
+**整合性チェック（任意）**
+```powershell
+# ダウンロードしたEXEの場所で実行
+Get-FileHash .\csv_excel_viewer.exe -Algorithm SHA256
+```
 ---
 
 ## よくある質問（FAQ）

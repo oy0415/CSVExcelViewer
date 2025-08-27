@@ -1,4 +1,3 @@
-# CSVExcelViewer
 # CSVExcelViewer — CSV/Excel結合 & ビューア (TkEasyGUI)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license)
@@ -31,13 +30,13 @@ Tkinter ベースの軽量 GUI フレームワーク **TkEasyGUI** を採用し�
 - 以下のようなcsvファイルとexcelファイルを用意する
 ![excelファイルのサンプル](docs/img/sample_excel.png)
 ![csvファイルのサンプル](docs/img/sample_csv.png)
-- CSVExcel｜Viewerをダブルクリック
+- CSVExcel|Viewerをダブルクリック
 ![起動画面](docs/img/app_open.png)
 - ファイルを選ぶ
 ![ファイルを選ぶ](docs/img/select_files.png)
 - 結合されたcsvファイルを表示、保存ボタンを押して保存する（ファイル選択ボタンを押すと再度ファイルを選択できる）
 ![プレビュー](docs/img/app-merge.png)
-- 保存ボタンを押し、保存する場所を指定すると以下のようなscvファイルが保存される
+- 保存ボタンを押し、保存する場所を指定すると以下のようなcsvファイルが保存される
 ![保存](docs/img/saved_csv.png)
 
 
@@ -52,7 +51,7 @@ Tkinter ベースの軽量 GUI フレームワーク **TkEasyGUI** を採用し�
 
 ## セットアップ（ソースから実行）
 
-```bash
+```powershell
 # 1) 仮想環境は任意。ここでは venv の例
 python -m venv .venv
 .venv\Scripts\activate
@@ -80,8 +79,8 @@ python src/csv_excel_viewer.py
 CSVExcelViewer/
 ├─ src/
 │   └─ csv_excel_viewer.py
-├─ screenshots/        # スクショやGIF（任意）
-├─ examples/           # サンプルCSV/Excel（任意）
+├─ docs/        # イメージ画像を用意
+├─ examples/           # サンプルCSV/Excel
 ├─ .gitignore
 ├─ requirements.txt
 ├─ LICENSE
@@ -132,7 +131,7 @@ pyinstaller --noconsole --onefile csv_excel_viewer.py
 
 ビルドせずに使いたい方は、こちらから最新版の実行ファイルを取得できます：
 
-- 👉 **[Releases からダウンロード](https://github.com/<yourname>/CSVExcelViewer/releases/latest)**  
+- 👉 **[Releases からダウンロード](https://github.com/oy0415/CSVExcelViewer/releases/latest)**  
   （Assets 内の `csv_excel_viewer.exe` または ZIP を保存してください）
 
 **使い方（Windows 10/11）**

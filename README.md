@@ -176,6 +176,9 @@ Get-FileHash .\csv_excel_viewer.exe -Algorithm SHA256
 本ソフトウェアは MIT License の下で配布します。詳細は [LICENSE](./LICENSE) をご覧ください。
 
 ---
+## Support
+バグ報告・質問は Issues にお願いします：
+https://github.com/oy0415/CSVExcelViewer/issues
 
 ## Author
 

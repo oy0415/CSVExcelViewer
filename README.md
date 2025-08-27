@@ -28,8 +28,10 @@ Tkinter ベースの軽量 GUI フレームワーク **TkEasyGUI** を採用し�
 
 起動 → 結合 → 保存までの流れ：
 
+![excelファイルのサンプル](docs/img/sample_excel.png)
+![csvファイルのサンプル](docs/img/sample_csv.png)
 ![起動画面](docs/img/app_open.png)
-![プレビュー](docs/img/app_merge.png)
+![プレビュー](docs/img/app-merge.png)
 ![保存](docs/img/saved_csv.png)
 
 

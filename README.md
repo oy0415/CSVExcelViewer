@@ -28,10 +28,16 @@ Tkinter ベースの軽量 GUI フレームワーク **TkEasyGUI** を採用し�
 
 起動 → 結合 → 保存までの流れ：
 
+- 以下のようなcsvファイルとexcelファイルを用意する
 ![excelファイルのサンプル](docs/img/sample_excel.png)
 ![csvファイルのサンプル](docs/img/sample_csv.png)
+- CSVExcel｜Viewerをダブルクリック
 ![起動画面](docs/img/app_open.png)
+- ファイルを選ぶ
+![ファイルを選ぶ](docs/img/select_files.png)
+- 結合されたcsvファイルを表示、保存ボタンを押して保存する（ファイル選択ボタンを押すと再度ファイルを選択できる）
 ![プレビュー](docs/img/app-merge.png)
+- 保存ボタンを押し、保存する場所を指定すると以下のようなscvファイルが保存される
 ![保存](docs/img/saved_csv.png)
 
 

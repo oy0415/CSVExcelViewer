@@ -179,5 +179,5 @@ Get-FileHash .\csv_excel_viewer.exe -Algorithm SHA256
 
 ## Author
 
-- name:小熊優介(@oy0415)
+- Author: oy0415
 - お仕事のご相談は Issues またはプロフィールの連絡先へ

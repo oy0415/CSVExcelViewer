@@ -7,7 +7,7 @@
 CSV と Excel（.xlsx/.xlsm）を **まとめて読み込み→結合→テーブルでプレビュー→CSV保存** まで行える Windows デスクトップツールです。  
 Tkinter ベースの軽量 GUI フレームワーク **TkEasyGUI** を採用し、非エンジニアにも扱いやすい操作性を意識しています。
 
-> 📦 すぐ使いたい方は **Releases** から `CSVExcelViewer.exe` をダウンロードしてください。
+> 📦 すぐ使いたい方は **https://github.com/oy0415/CSVExcelViewer/releases/latest** から `CSVExcelViewer.exe` をダウンロードしてください。
 
 ---
 
@@ -23,7 +23,6 @@ Tkinter ベースの軽量 GUI フレームワーク **TkEasyGUI** を採用し�
 
 ## 画面イメージ（例）
 
-## スクリーンショット
 
 起動 → 結合 → 保存までの流れ：
 
@@ -50,14 +49,13 @@ Tkinter ベースの軽量 GUI フレームワーク **TkEasyGUI** を採用し�
 ---
 
 ## セットアップ（ソースから実行）
-
-```powershell
+```
 # 1) 仮想環境は任意。ここでは venv の例
 python -m venv .venv
-.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 
 # 2) 依存ライブラリのインストール
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 
 # 3) 実行
 python src/csv_excel_viewer.py
@@ -79,7 +77,14 @@ python src/csv_excel_viewer.py
 CSVExcelViewer/
 ├─ src/
 │   └─ csv_excel_viewer.py
-├─ docs/        # イメージ画像を用意
+├─  docs/
+│    └─ img/    # イメージ画像を用意
+│       ├─ sample_excel.png
+│       ├─ sample_csv.png
+│       ├─ app_open.png
+│       ├─ select_files.png
+│       ├─ app-merge.png
+│       └─ saved_csv.png
 ├─ examples/           # サンプルCSV/Excel
 ├─ .gitignore
 ├─ requirements.txt

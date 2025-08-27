@@ -7,7 +7,6 @@
 CSV と Excel（.xlsx/.xlsm）を **まとめて読み込み→結合→テーブルでプレビュー→CSV保存** まで行える Windows デスクトップツールです。  
 Tkinter ベースの軽量 GUI フレームワーク **TkEasyGUI** を採用し、非エンジニアにも扱いやすい操作性を意識しています。
 
-> 📦 すぐ使いたい方は **https://github.com/oy0415/CSVExcelViewer/releases/latest** から `CSVExcelViewer.exe` をダウンロードしてください。
 
 ---
 

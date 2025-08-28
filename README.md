@@ -170,10 +170,18 @@ Get-FileHash .\csv_excel_viewer.exe -Algorithm SHA256
 
 ---
 
-## ライセンス
+## 概要
+本プロジェクトは『Pythonでつくるデスクトップアプリ』（ソシム, 2024）の
+サンプルコード（MIT）を参考に、以下の改良を加えた派生実装です。
+- 例：CSV/Excel 自動判定と結合機能、GUI改善、例外処理強化、EXEビルド、README整備
+  
+## 出典・ライセンス
 
 本ソフトウェアは MIT License の下で配布します。詳細は [LICENSE](./LICENSE) をご覧ください。
 
+Original: kujirahand/book-desktop-python-sample (MIT)
+© 2024 kujirahand. MIT License を本リポジトリに同梱しています。  
+本リポジトリでの変更分：© 2025 oy0415, MIT
 ---
 ## Support
 バグ報告・質問は Issues にお願いします：
